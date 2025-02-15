@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow / Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="slide">
+        <div class="images">
+            <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="image 1" class="image opacity" id="image1">
+            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="image 2" class="image" id="image2">
+            <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" alt="image 3" class="image" id="image3">
+            <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" alt="image 4" class="image" id="image4">
+            <span class="image-counter" id="image-counter">1 / 3</span>
+            <span class="image-caption" id="image-caption">Caption Text</span>
+            <button class="arrow-left" id="arrow-left"><i class="fas fa-chevron-left"></i></button>
+            <button class="arrow-right" id="arrow-right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="buttons">
+            <div class="buttons-container">
+                <button value="1" class="button active"></button>
+                <button value="2" class="button"></button>
+                <button value="3" class="button"></button>
+                <button value="4" class="button"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
