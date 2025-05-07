@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,7 +18,6 @@ body {
     line-height: 1.6;
     padding-top: 70px;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 .background-animation {
@@ -153,6 +153,16 @@ nav a:hover {
     display: block;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* HOME SECTION */
 .home {
@@ -161,6 +171,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     color: var(--text-color);
+    animation: fadeIn 1.5s ease-out;
 }
 
 .home-content {
@@ -245,6 +256,148 @@ nav a:hover {
     border-radius: 50%;
     border: 3px solid var(--accent-color);
 }
+
+/* SECCIÓN SOBRE MÍ */
+.sobre-mi {
+    padding: 4rem 2rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.sobre-mi-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-mi h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.sobre-mi p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #bbb;
+}
+
+.habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.habilidad-card {
+    position: relative;
+    background: linear-gradient(145deg, #292929, #1c1c1c);
+    border: 1px solid #444;
+    color: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+    cursor: default;
+    user-select: none;
+}
+
+.habilidad-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--accent-color), transparent 60%);
+    opacity: 0.1;
+    animation: pulse 4s infinite;
+    z-index: 0;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.1; }
+    50% { transform: scale(1.1); opacity: 0.2; }
+    100% { transform: scale(0.9); opacity: 0.1; }
+}
+
+.habilidad-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(145deg, #2d2d2d, #181818);
+}
+
+.habilidad-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    z-index: 1;
+    position: relative;
+}
+
+.habilidad-card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    z-index: 1;
+    position: relative;
+}
+
+.habilidad-card p {
+    font-size: 0.95rem;
+    color: #aaa;
+    z-index: 1;
+    position: relative;
+}
+
+
+.sobre-mi-content {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* SECCIÓN SOBRE MÍ - MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .sobre-mi {
+        padding: 2rem;
+    }
+
+    .sobre-mi p {
+        font-size: 1rem;
+    }
+
+    .habilidades {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .habilidad-card {
+        width: 100%;
+        max-width: 250px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre-mi {
+        padding: 1.5rem;
+    }
+
+    .sobre-mi h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre-mi p {
+        font-size: 0.9rem;
+    }
+
+    .habilidad-card {
+        max-width: 220px;
+    }
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -342,5 +495,11 @@ nav a:hover {
 
     .home-text h2, .home-text h3, .home-text p, .home-text .cta-button {
         margin: 20px auto;
+    }
+
+    /* ABOUT ME SECTION */
+
+    .sobre-mi h2 {
+        font-size: 3rem;
     }
 }
