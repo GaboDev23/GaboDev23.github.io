@@ -32,6 +32,24 @@ Se presentan en tarjetas visuales con íconos:
 - **Base de Datos SQL**: Gestión eficiente de datos.
 - **Java**: Lenguaje de propósito general.
 
+### 💼 Proyectos
+- Sección visual con tarjetas que ocupan gran parte del ancho de pantalla.
+- Diseño adaptativo con estética oscura y minimalista.
+- Incluye una animación suave al hacer scroll.
+- Actualmente muestra proyectos de ejemplo:
+
+  - **Portfolio Landing Page**  
+    Diseño moderno para portafolios personales.  
+    _Tecnologías: HTML, CSS_
+
+  - **Gestor de Tareas**  
+    App estilo To-Do con diseño responsivo.  
+    _Tecnologías: HTML, CSS, JS_
+
+  - **E-Commerce**  
+    Tienda en línea dónde los usuarios podran comprar artículos en línea.
+    _Tecnologías: HTML, CSS, JS_
+
 ---
 
 ## 🎨 Estilo y Animaciones
@@ -40,7 +58,7 @@ Se presentan en tarjetas visuales con íconos:
 - **Animaciones**:
   - Burbujas flotantes en el fondo usando `@keyframes float`.
   - Efecto de máquina de escribir para el texto "Desarrollador Frontend".
-  - Apariciones suaves (`fadeIn`) para secciones.
+  - Apariciones suaves (`fadeIn`) para secciones y tarjetas de proyectos.
 - **Diseño Responsive**: Compatible con dispositivos móviles (media queries hasta 480px y 768px).
 
 ---
@@ -55,7 +73,6 @@ Se presentan en tarjetas visuales con íconos:
 
 ## 📌 Próximas funcionalidades (TODO)
 
-- Sección de **Proyectos**.
 - Sección de **Servicios** ofrecidos.
 - Formulario de **Contacto**.
 - Integración de JavaScript para interactividad adicional (scroll, sliders, etc).
@@ -82,4 +99,3 @@ Desarrollador frontend enfocado en experiencia de usuario.
 Este proyecto es de uso personal y educativo. Si deseas reutilizar parte del diseño o estructura, menciona la autoría correspondiente.
 
 ---
-
