@@ -1,76 +1,85 @@
-Documentación del Proyecto: Portfolio Personal – GavoDev
+# GavoDev - Portafolio Personal
 
-Descripción general
-GavoDev es un portfolio personal moderno, minimalista y adaptable a dispositivos móviles. El objetivo es presentar tu perfil profesional como Desarrollador Frontend, mostrar tus proyectos, servicios, y facilitar el contacto con clientes o empleadores.
+Este es un sitio web de portafolio personal desarrollado por **Gilberto Gabriel Herling Barriola**, estudiante de Ingeniería en Computación en la Facultad de Ingeniería (UDELAR). El objetivo principal es mostrar habilidades, proyectos y servicios como desarrollador frontend.
 
-Componentes
-1. Header
-Logo/título: GavoDev
+## 🌐 Tecnologías Utilizadas
 
-Navegación con secciones:
+- **HTML5**: Estructura semántica de la página.
+- **CSS3**: Estilos personalizados, animaciones y diseño responsive.
+- **JavaScript (por integrar)**: Para interactividad futura.
+- **Font Awesome**: Íconos profesionales.
+- **Google Fonts**: Tipografías personalizadas (`Inter`, `Montserrat`).
 
-Sobre mí
+---
 
-Proyectos
+## 🧑‍💻 Secciones del Sitio
 
-Servicios
+### 🏠 Home
+- Presentación con nombre completo.
+- Rol profesional: *Desarrollador Frontend*.
+- Botón de llamado a la acción "Ver proyectos".
+- Imagen decorativa (foto circular).
 
-Contacto
+### 👨‍🎓 Sobre mí
+- Breve biografía personal y académica.
+- Intereses en experiencia de usuario, rendimiento y código limpio.
 
-Toggle button tipo hamburguesa para dispositivos móviles, basado en un checkbox.
+### 🛠️ Habilidades Técnicas
+Se presentan en tarjetas visuales con íconos:
 
-2. Home (Inicio)
-Nombre
+- **HTML & CSS**: Diseño web adaptable.
+- **JavaScript**: Interactividad moderna.
+- **Base de Datos SQL**: Gestión eficiente de datos.
+- **Java**: Lenguaje de propósito general.
 
-Título: Desarrollador Frontend con efecto de máquina de escribir.
+---
 
-Frase de impacto o propuesta de valor.
+## 🎨 Estilo y Animaciones
 
-Botón de llamada a la acción.
+- **Colores**: Fondo oscuro, texto claro, acento azul brillante (`#0077ff`).
+- **Animaciones**:
+  - Burbujas flotantes en el fondo usando `@keyframes float`.
+  - Efecto de máquina de escribir para el texto "Desarrollador Frontend".
+  - Apariciones suaves (`fadeIn`) para secciones.
+- **Diseño Responsive**: Compatible con dispositivos móviles (media queries hasta 480px y 768px).
 
-Imagen de perfil.
+---
 
-3. Animación de fondo
-Fondo minimalista animado con @keyframes (por ejemplo: círculos, burbujas o partículas suaves).
+## 📱 Responsive Design
 
-Paleta de colores oscuros (#121212, #222, con acentos en #0077ff).
+- Menú desplegable tipo hamburguesa en pantallas pequeñas.
+- Layout adaptable en todas las secciones.
+- Tarjetas y tipografías ajustadas según el tamaño de pantalla.
 
-Estilo (CSS)
-Paleta de colores:
+---
 
-Fondo: #121212
+## 📌 Próximas funcionalidades (TODO)
 
-Texto: #f0f0f0
+- Sección de **Proyectos**.
+- Sección de **Servicios** ofrecidos.
+- Formulario de **Contacto**.
+- Integración de JavaScript para interactividad adicional (scroll, sliders, etc).
+- Mejora del SEO con etiquetas meta y accesibilidad.
 
-Color acento: #0077ff
+---
 
-Tipografías usadas:
+## ✨ Vista previa
 
-Títulos: 'Montserrat', sans-serif
+> ¡Transformo ideas en experiencias digitales modernas, rápidas y accesibles!
 
-Texto general: 'Inter', sans-serif
+---
 
-Responsive design:
+## 🧠 Autor
 
-Menú oculto en mobile y desplegable con checkbox
+**Gilberto Gabriel Herling Barriola**  
+Estudiante de Ingeniería en Computación (FING - UDELAR)  
+Desarrollador frontend enfocado en experiencia de usuario.
 
-Imagen de perfil y secciones adaptables al ancho de pantalla
+---
 
-Efectos:
+## 📝 Licencia
 
-Hover en enlaces
+Este proyecto es de uso personal y educativo. Si deseas reutilizar parte del diseño o estructura, menciona la autoría correspondiente.
 
-Transiciones suaves
+---
 
-Menú hamburguesa animado con rotación y opacidad
-
-Efecto máquina de escribir en el título de la sección Home
-
-Funcionalidades futuras
-Secciones completas: Proyectos, Servicios y Contacto
-
-Formulario de contacto funcional
-
-Deploy a GitHub Pages o Vercel
-
-Posible integración de animaciones JS (ScrollReveal, Typed.js, etc.)

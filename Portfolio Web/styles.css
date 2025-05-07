@@ -98,6 +98,11 @@ body {
     }
 }
 
+hr {
+    animation: fadeIn 1.5s ease-out;
+    border-color: #222;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -166,7 +171,7 @@ nav a:hover {
 
 /* HOME SECTION */
 .home {
-    padding: 8rem 2rem;
+    padding: 9rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,29 +362,7 @@ nav a:hover {
     animation: fadeIn 1.5s ease-out;
 }
 
-/* SECCIÓN SOBRE MÍ - MEDIA QUERIES */
-
-@media (max-width: 768px) {
-    .sobre-mi {
-        padding: 2rem;
-    }
-
-    .sobre-mi p {
-        font-size: 1rem;
-    }
-
-    .habilidades {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .habilidad-card {
-        width: 100%;
-        max-width: 250px;
-        padding: 1rem;
-    }
-}
-
+/* MEDIA QUERIES - Pantallas pequeñas */
 @media (max-width: 480px) {
     .sobre-mi {
         padding: 1.5rem;
@@ -392,14 +375,10 @@ nav a:hover {
     .sobre-mi p {
         font-size: 0.9rem;
     }
-
-    .habilidad-card {
-        max-width: 220px;
-    }
 }
 
 
-/* Responsive */
+/* MEDIA QUERIES - Pantallas medianas */
 @media (max-width: 768px) {
     nav {
         position: fixed;
@@ -498,8 +477,26 @@ nav a:hover {
     }
 
     /* ABOUT ME SECTION */
+    .sobre-mi {
+        padding: 2rem;
+    }
 
     .sobre-mi h2 {
         font-size: 3rem;
+    }
+
+    .sobre-mi p {
+        font-size: 1rem;
+    }
+
+    .habilidades {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .habilidad-card {
+        width: 100%;
+        max-width: 250px;
+        padding: 1rem;
     }
 }
