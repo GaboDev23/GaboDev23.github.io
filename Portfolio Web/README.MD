@@ -1,101 +1,113 @@
-# GavoDev - Portafolio Personal
+Perfecto, Gabriel. Aquí tienes la versión del README para tu sitio de portafolio personal con el estilo que querés, clara, profesional y en español:
 
-Este es un sitio web de portafolio personal desarrollado por **Gilberto Gabriel Herling Barriola**, estudiante de Ingeniería en Computación en la Facultad de Ingeniería (UDELAR). El objetivo principal es mostrar habilidades, proyectos y servicios como desarrollador frontend.
+---
+
+# GavoDev - Portafolio Web
+
+Este es un portafolio personal desarrollado por **Gilberto Gabriel Herling Barriola**, estudiante de Ingeniería en Computación (FING - UDELAR). El propósito del proyecto es presentar tus habilidades técnicas, proyectos realizados y servicios como desarrollador frontend.
+
+---
 
 ## 🌐 Tecnologías Utilizadas
 
-- **HTML5**: Estructura semántica de la página.
-- **CSS3**: Estilos personalizados, animaciones y diseño responsive.
-- **JavaScript (por integrar)**: Para interactividad futura.
-- **Font Awesome**: Íconos profesionales.
-- **Google Fonts**: Tipografías personalizadas (`Inter`, `Montserrat`).
+* **HTML5** – Estructura semántica del sitio web.
+* **CSS3** – Estilización personalizada, diseño adaptable y animaciones suaves.
+* **JavaScript** – Para añadir interactividad dinámica (en desarrollo).
+* **Font Awesome** – Íconos vectoriales y responsivos.
+* **Google Fonts** – Tipografías modernas (`Inter`, `Montserrat`).
 
 ---
 
-## 🧑‍💻 Secciones del Sitio
+## 🧑‍💻 Estructura del Sitio
 
-### 🏠 Home
-- Presentación con nombre completo.
-- Rol profesional: *Desarrollador Frontend*.
-- Botón de llamado a la acción "Ver proyectos".
-- Imagen decorativa (foto circular).
+### 🏠 Inicio
 
-### 👨‍🎓 Sobre mí
-- Breve biografía personal y académica.
-- Intereses en experiencia de usuario, rendimiento y código limpio.
+* Nombre completo y presentación personal.
+* Título profesional: *Desarrollador Frontend*.
+* Frase destacada con efecto de máquina de escribir.
+* Botón “Ver proyectos” para navegación rápida.
+* Imagen personal redonda decorativa.
+
+### 👤 Sobre Mí
+
+* Descripción breve sobre tu formación, intereses y motivación.
+* Interés por la experiencia de usuario, rendimiento web y buenas prácticas de código.
 
 ### 🛠️ Habilidades Técnicas
-Se presentan en tarjetas visuales con íconos:
 
-- **HTML & CSS**: Diseño web adaptable.
-- **JavaScript**: Interactividad moderna.
-- **Base de Datos SQL**: Gestión eficiente de datos.
-- **Java**: Lenguaje de propósito general.
+Representadas mediante tarjetas visuales con íconos:
+
+* **HTML & CSS** – Maquetado moderno y responsive.
+* **JavaScript** – Lógica de interfaz e interactividad.
+* **Bases de Datos (SQL)** – Gestión estructurada de datos.
+* **Java** – Lenguaje orientado a objetos y lógica general.
 
 ### 💼 Proyectos
-- Sección visual con tarjetas que ocupan gran parte del ancho de pantalla.
-- Diseño adaptativo con estética oscura y minimalista.
-- Incluye una animación suave al hacer scroll.
-- Actualmente muestra proyectos de ejemplo:
 
-  - **Portfolio Landing Page**  
-    Diseño moderno para portafolios personales.  
-    _Tecnologías: HTML, CSS_
+Sección destacada con tarjetas informativas para cada proyecto:
 
-  - **Gestor de Tareas**  
-    App estilo To-Do con diseño responsivo.  
-    _Tecnologías: HTML, CSS, JS_
+* **Portfolio Landing Page**
+  Página de presentación personal con diseño minimalista.
+  *Tecnologías: HTML, CSS*
 
-  - **E-Commerce**  
-    Tienda en línea dónde los usuarios podran comprar artículos en línea.
-    _Tecnologías: HTML, CSS, JS_
+* **Gestor de Tareas**
+  Aplicación tipo To-Do con estructura responsiva.
+  *Tecnologías: HTML, CSS, JavaScript*
 
----
+* **E-Commerce**
+  Sitio de tienda online para mostrar productos y gestionar compras.
+  *Tecnologías: HTML, CSS, JavaScript*
 
-## 🎨 Estilo y Animaciones
-
-- **Colores**: Fondo oscuro, texto claro, acento azul brillante (`#0077ff`).
-- **Animaciones**:
-  - Burbujas flotantes en el fondo usando `@keyframes float`.
-  - Efecto de máquina de escribir para el texto "Desarrollador Frontend".
-  - Apariciones suaves (`fadeIn`) para secciones y tarjetas de proyectos.
-- **Diseño Responsive**: Compatible con dispositivos móviles (media queries hasta 480px y 768px).
+> Las tarjetas incluyen efectos visuales suaves y diseño adaptable.
 
 ---
 
-## 📱 Responsive Design
+## 🎨 Estética y Animaciones
 
-- Menú desplegable tipo hamburguesa en pantallas pequeñas.
-- Layout adaptable en todas las secciones.
-- Tarjetas y tipografías ajustadas según el tamaño de pantalla.
+* **Paleta de colores**: Fondo oscuro (`#121212`), texto claro, acento azul (`#0077ff`).
+* **Animaciones**:
 
----
-
-## 📌 Próximas funcionalidades (TODO)
-
-- Sección de **Servicios** ofrecidos.
-- Formulario de **Contacto**.
-- Integración de JavaScript para interactividad adicional (scroll, sliders, etc).
-- Mejora del SEO con etiquetas meta y accesibilidad.
+  * Burbujas flotantes sutiles (`@keyframes float`).
+  * Efecto máquina de escribir para el título.
+  * Aparición progresiva (`fadeIn`) en secciones y tarjetas.
 
 ---
 
-## ✨ Vista previa
+## 📱 Diseño Responsive
 
-> ¡Transformo ideas en experiencias digitales modernas, rápidas y accesibles!
+* Navegación tipo hamburguesa para pantallas móviles.
+* Reorganización fluida de tarjetas y textos en resoluciones pequeñas.
+* Tipografías y márgenes ajustados para dispositivos de 480px y 768px.
+
+---
+
+## 🚧 Funcionalidades en Desarrollo
+
+* Sección de **Servicios** disponibles.
+* Formulario de **Contacto** funcional.
+* Integración avanzada con JavaScript para sliders, scroll animado, etc.
+* Mejora de SEO y accesibilidad general del sitio.
+
+---
+
+## ✨ Lema Profesional
+
+> *Transformo ideas en experiencias digitales modernas, accesibles y atractivas.*
 
 ---
 
 ## 🧠 Autor
 
-**Gilberto Gabriel Herling Barriola**  
-Estudiante de Ingeniería en Computación (FING - UDELAR)  
-Desarrollador frontend enfocado en experiencia de usuario.
+**Gilberto Gabriel Herling Barriola**
+Estudiante de Ingeniería en Computación - FING (UDELAR)
+Apasionado por el desarrollo web, la experiencia de usuario y el aprendizaje continuo.
 
 ---
 
 ## 📝 Licencia
 
-Este proyecto es de uso personal y educativo. Si deseas reutilizar parte del diseño o estructura, menciona la autoría correspondiente.
+Este proyecto es de uso personal y educativo. Si deseas tomar inspiración o adaptar elementos, se agradece la mención correspondiente.
 
 ---
+
+¿Querés que también te ayude a generar este README en inglés o armarlo como archivo `README.md` listo para usar en GitHub?

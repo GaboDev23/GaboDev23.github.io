@@ -20,6 +20,19 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #222;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color);
+    border-radius: 20px;
+}
+
 p {
     font-size: 1.5rem;
 }
@@ -173,6 +186,12 @@ nav a:hover {
     }
 }
 
+.sobre-mi, .projects, .servicios {
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
 /* HOME SECTION */
 .home {
     padding: 9rem 2rem;
@@ -267,12 +286,6 @@ nav a:hover {
 }
 
 /* SECCIÓN SOBRE MÍ */
-.sobre-mi {
-    padding: 4rem 2rem;
-    color: var(--text-color);
-    text-align: center;
-}
-
 .sobre-mi-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -366,12 +379,7 @@ nav a:hover {
     animation: fadeIn 1.5s ease-out;
 }
 
-.projects {
-    background-color: #111;
-    color: #eee;
-    padding: 60px 20px;
-    text-align: center;
-}
+/* PROJECTS */
 
 .projects-content {
     max-width: 1000px;
@@ -445,7 +453,7 @@ nav a:hover {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
+    animation: fadeIn 1s ease forwards;
 }
 
 @keyframes fadeInUp {
@@ -455,18 +463,54 @@ nav a:hover {
     }
 }
 
-/* MEDIA QUERIES - Pantallas pequeñas */
-@media (max-width: 480px) {
-    .sobre-mi {
-        padding: 1.5rem;
-    }
+.titulo {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0077ff;
+}
 
-    .sobre-mi h2 {
-        font-size: 1.8rem;
-    }
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
 
-    .sobre-mi p {
-        font-size: 0.9rem;
+.tarjeta-servicio {
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 300px;
+    flex: 1 1 260px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-5px);
+}
+
+.icono {
+    font-size: 2.5rem;
+    color: #0077ff;
+    margin-bottom: 1rem;
+}
+
+/* Animaciones */
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1s forwards;
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -493,6 +537,10 @@ nav a:hover {
         display: none;
     }
     
+.menu-toggle:checked ~ nav {
+    background: var(--bg-color);
+}
+
     .menu-icon {
         display: flex;
         flex-direction: column;
@@ -573,10 +621,6 @@ nav a:hover {
         padding: 2rem;
     }
 
-    .sobre-mi h2 {
-        font-size: 3rem;
-    }
-
     .sobre-mi p {
         font-size: 1rem;
     }
@@ -599,5 +643,11 @@ nav a:hover {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    /* Servicios */
+    .contenedor-servicios {
+        flex-direction: column;
+        align-items: center;
     }
 }
