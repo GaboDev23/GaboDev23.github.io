@@ -252,7 +252,7 @@ nav a:hover {
     max-width: 400px;
 }
 
-.cta-button {
+.cta-button, .btn-enviar, .aceptar-modal {
     background-color: var(--accent-color);
     color: #fff;
     padding: 0.75em 1.5em;
@@ -266,7 +266,7 @@ nav a:hover {
     text-align: center;
 }
 
-.cta-button:hover {
+.cta-button:hover, .btn-enviar:hover, .aceptar-modal:hover {
     background-color: #005fcc;
 }
 
@@ -382,12 +382,13 @@ nav a:hover {
 /* PROJECTS */
 
 .projects-content {
-    max-width: 1000px;
+    width: 100%;
+    /* max-width: 1000px; */
     margin: 0 auto;
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 20px;
     color: #0077ff;
 }
@@ -514,6 +515,83 @@ nav a:hover {
     }
 }
 
+/* Contacto */
+.contact-section {
+    background-color: #121212;
+    color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0077ff;
+}
+
+.contact-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1.5rem;
+}
+
+.contact-form .mensaje-error {
+    font-size: 1rem;
+    display: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #0077ff;
+    background-color: #2a2a2a;
+}
+
+.btn-enviar {
+    font-size: 1rem;
+    cursor: pointer;
+    margin: auto;
+}
+
+@media (max-width: 480px) {
+    .habilidad-card {
+        margin: auto;
+        width: 100%;
+    }
+}
+
 /* MEDIA QUERIES - Pantallas medianas */
 @media (max-width: 768px) {
     nav {
@@ -625,17 +703,6 @@ nav a:hover {
         font-size: 1rem;
     }
 
-    .habilidades {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .habilidad-card {
-        width: 100%;
-        max-width: 250px;
-        padding: 1rem;
-    }
-
     /* Proyectos */
     .project-card {
         padding: 20px;
@@ -649,5 +716,18 @@ nav a:hover {
     .contenedor-servicios {
         flex-direction: column;
         align-items: center;
+    }
+
+    .tarjeta-servicio {
+        max-width: 500px;
+    }
+
+    /* CONTACTO */
+    .contact-form {
+        gap: 12px;
+    }
+
+    .contact-title {
+    font-size: 1.6rem;
     }
 }

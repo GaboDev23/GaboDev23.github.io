@@ -158,8 +158,39 @@
             </div>
         </section>
 
-        <hr>
+        <hr id="contacto">
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2 class="contact-title">¡Hablemos!</h2>
+                <p class="contact-subtitle">¿Tienes un proyecto en mente o una idea para desarrollar? ¡Estoy listo para ayudarte!</p>
+
+                <form class="contact-form" id="contact-form"  action="https://formspree.io/f/mbloaykw" method="POST">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Ana Pérez">
+                    <label for="nombre" class="mensaje-error" id="error-nombre"></label>
+
+                    <label for="empresa">Nombre de la empresa</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Ej: Soluciones XYZ">
+
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required placeholder="Ej: ana@email.com">
+                    <label for="email" class="mensaje-error" id="error-email"></label>
+
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +598 91 123 456" required>
+                    <label for="telefono" class="mensaje-error" id="error-telefono"></label>
+
+                    <label for="detalles">Cuéntame un poco más *</label>
+                    <textarea id="detalles" name="detalles" rows="4" placeholder="¿Qué necesitas desarrollar? ¿Cuáles son tus objetivos?" required></textarea>
+
+                    <button type="submit" class="btn-enviar" id="btn-enviar">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
 
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
