@@ -29,7 +29,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--bg-color);
+    background-color: #555;
     border-radius: 20px;
 }
 
@@ -141,19 +141,19 @@ h1 a {
     font-family: 'Montserrat', sans-serif;
 }
 
-nav {
+.nav-bar {
     display: flex;
     gap: 2rem;
 }
 
-nav a {
+.nav-bar a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
     font-size: 1.5em;
 }
 
-nav a:hover {
+.nav-bar a:hover {
     color: var(--accent-color);
 }
 
@@ -517,7 +517,6 @@ nav a:hover {
 
 /* Contacto */
 .contact-section {
-    background-color: #121212;
     color: #f0f0f0;
     padding: 60px 20px;
     text-align: center;
@@ -585,6 +584,58 @@ nav a:hover {
     margin: auto;
 }
 
+.site-footer {
+    background-color: #0e0e0e;
+    color: #bbb;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    /* animation: fadeInUp 1s ease-in; */
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-author {
+    margin-bottom: 15px;
+    color: #888;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #0077ff;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #ccc;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #0077ff;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 480px) {
     .habilidad-card {
         margin: auto;
@@ -594,7 +645,7 @@ nav a:hover {
 
 /* MEDIA QUERIES - Pantallas medianas */
 @media (max-width: 768px) {
-    nav {
+    .nav-bar {
         position: fixed;
         top: 15%;
         left: 0;
@@ -615,9 +666,9 @@ nav a:hover {
         display: none;
     }
     
-.menu-toggle:checked ~ nav {
-    background: var(--bg-color);
-}
+    .menu-toggle:checked ~ nav {
+        background: var(--bg-color);
+    }
 
     .menu-icon {
         display: flex;
@@ -728,6 +779,6 @@ nav a:hover {
     }
 
     .contact-title {
-    font-size: 1.6rem;
+        font-size: 1.6rem;
     }
 }
