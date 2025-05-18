@@ -146,14 +146,13 @@ h1 a {
     gap: 2rem;
 }
 
-.nav-bar a {
+a {
     text-decoration: none;
-    color: var(--text-color);
+    color: #bbb;
     font-weight: 500;
-    font-size: 1.5em;
 }
 
-.nav-bar a:hover {
+a:hover {
     color: var(--accent-color);
 }
 
@@ -190,6 +189,23 @@ h1 a {
     padding: 4rem 2rem;
     text-align: center;
     color: var(--text-color);
+}
+
+.main-politicas {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-politicas h1, .main-politicas h2 {
+    color: #0077cc;
+    padding: 8px 10px;
+}
+
+.main-politicas p {
+    padding: 8px 20px;
 }
 
 /* HOME SECTION */

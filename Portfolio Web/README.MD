@@ -1,123 +1,41 @@
-# GavoDev - Portafolio Web
+# GaboDev - Portafolio Personal
 
-Este es un portafolio personal desarrollado por **Gilberto Gabriel Herling Barriola**, estudiante de Ingeniería en Computación (FING - UDELAR). El propósito del proyecto es presentar tus habilidades técnicas, proyectos realizados y servicios como desarrollador frontend.
+Este es el portafolio web de **Gilberto Gabriel Herling Barriola**, también conocido como **GaboDev**, donde presento mi perfil como desarrollador frontend, mis habilidades, servicios y una vía de contacto para futuros proyectos.
 
----
+## 📂 Archivos del Proyecto
 
-## 🌐 Tecnologías Utilizadas
+### `index.html`
+Archivo principal del sitio. Contiene:
 
-- **HTML5** – Estructura semántica del sitio web.
-- **CSS3** – Estilización personalizada, diseño adaptable y animaciones suaves.
-- **JavaScript** – Para añadir interactividad dinámica (en desarrollo).
-- **Font Awesome** – Íconos vectoriales y responsivos.
-- **Google Fonts** – Tipografías modernas (`Inter`, `Montserrat`).
+- Una presentación sobre mí y mis habilidades técnicas.
+- Una sección de proyectos personales (actuales y en desarrollo).
+- Un apartado con los servicios que ofrezco como desarrollador frontend.
+- Un formulario de contacto funcional, integrado con [Formspree](https://formspree.io/).
+- Un footer con enlaces a redes sociales y la política de privacidad.
 
----
+### `politica-privacidad.html`
+Describe las políticas de privacidad del sitio. Contiene:
 
-## 🧑‍💻 Estructura del Sitio
+- Qué datos personales se recopilan y con qué propósito.
+- Aclaración de que el sitio **no utiliza cookies**.
+- Tus derechos como usuario (acceso, corrección y eliminación de datos).
+- Información de contacto en caso de consultas sobre privacidad.
 
-### 🏠 Inicio
+## 🎨 Estilos y diseño
 
-- Nombre completo y presentación personal.
-- Título profesional: *Desarrollador Frontend*.
-- Frase destacada con efecto de máquina de escribir.
-- Botón “Ver proyectos” para navegación rápida.
-- Imagen personal redonda decorativa.
-- Animación de fondo con burbujas flotantes.
+- `styles.css`: hoja de estilos enlazada a ambas páginas para un diseño coherente, moderno y responsivo.
+- Uso de tipografías de Google Fonts (`Inter`, `Montserrat`) y de iconos con FontAwesome.
 
-### 👤 Sobre Mí
+## 🚀 Tecnologías utilizadas
 
-- Descripción sobre formación, intereses y motivación personal.
-- Enfoque en experiencia de usuario, rendimiento web y buenas prácticas de código.
+- **HTML5** y **CSS3** para la estructura y el diseño.
+- **JavaScript** para funcionalidades del formulario y menú responsive (incluido en `script.js`).
+- **Formspree** para la gestión del formulario de contacto sin necesidad de backend.
 
-### 🛠️ Habilidades Técnicas
+## 📄 Licencia
 
-Representadas mediante tarjetas visuales con íconos:
-
-- **HTML & CSS** – Maquetado moderno y responsive.
-- **JavaScript** – Lógica de interfaz e interactividad.
-- **Base de Datos (SQL)** – Gestión estructurada de datos.
-- **Java** – Lógica orientada a objetos.
-
-### 💼 Proyectos
-
-Tarjetas con ejemplos de proyectos que se planean desarrollar o están en curso:
-
-- **Portfolio Interactivo**
-  - Sitio web personal con animaciones suaves, diseño responsive y enfoque en accesibilidad.
-
-- **Gestor de Tareas (Próximamente)**
-  - App tipo To-Do list con agregar/modificar/eliminar tareas.
-
-- **E-Commerce (Próximamente)**
-  - Tienda online para mostrar y vender productos.
-
-### 🧰 Servicios
-
-Sección con tarjetas que describen servicios ofrecidos:
-
-- **Desarrollo Web** – Sitios modernos, rápidos y accesibles.
-- **Diseño Responsive** – Interfaces adaptables a cualquier dispositivo.
-- **Optimización UX/UI** – Mejoras de experiencia y rendimiento visual.
-
-### 📬 Contacto
-
-Formulario funcional para contacto directo:
-
-- Campos: Nombre, Empresa, Correo electrónico, Teléfono, Detalles del proyecto.
-- Validaciones básicas de formulario.
-- Envío gestionado con [Formspree](https://formspree.io).
-
-### 🦶 Footer
-
-Pie de página que contiene:
-
-- Autor y derechos de autor.
-- Enlace a política de privacidad.
-- Íconos de redes sociales con enlaces a GitHub y LinkedIn.
+Este proyecto es de uso personal. Puedes consultarlo y usarlo como inspiración educativa, pero se prohíbe su distribución o reproducción sin autorización.
 
 ---
 
-## 🎨 Estética y Animaciones
-
-- **Paleta de colores**: Fondo oscuro (`#121212`), texto claro, acento azul (`#0077ff`).
-- **Tipografías**: `Inter` y `Montserrat`.
-- **Animaciones**:
-  - Fondo de burbujas animadas (`@keyframes float`).
-  - Máquina de escribir en el título profesional.
-  - Efectos `fade-in` y `slide-up` en tarjetas y secciones.
-- **Diseño Responsive**:
-  - Menú hamburguesa funcional en móviles.
-  - Reordenamiento fluido de secciones en dispositivos de 480px y 768px.
-
----
-
-## 🚧 Funcionalidades en Desarrollo
-
-- Interactividad avanzada con JavaScript.
-- Mejora del SEO y accesibilidad.
-- Proyecto Gestor de Tareas.
-- Proyecto E-Commerce.
-
----
-
-## ✨ Lema Profesional
-
-> *Transformo ideas en experiencias digitales modernas, accesibles y atractivas.*
-
----
-
-## 🧠 Autor
-
-**Gilberto Gabriel Herling Barriola**  
-Estudiante de Ingeniería en Computación - FING (UDELAR)  
-Apasionado por el desarrollo web, la experiencia de usuario y el aprendizaje continuo.
-
----
-
-## 📝 Licencia
-
-Este proyecto es de uso personal y educativo. Si deseas tomar inspiración o adaptar elementos, se agradece la mención correspondiente.
-
----
-
+**© 2025 Gilberto Gabriel Herling Barriola**
