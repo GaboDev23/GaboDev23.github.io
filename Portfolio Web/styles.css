@@ -130,7 +130,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    border-bottom: 1px solid #333;
     z-index: 1000;
 }
 
@@ -150,6 +149,7 @@ a {
     text-decoration: none;
     color: #bbb;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 a:hover {
@@ -262,8 +262,11 @@ a:hover {
     50% { border-color: transparent; }
 }
 
+p {
+    font-size: 1.5rem;
+}
+
 .home-text p {
-    font-size: 1.1rem;
     margin-bottom: 2rem;
     max-width: 400px;
 }
@@ -271,7 +274,7 @@ a:hover {
 .cta-button, .btn-enviar, .aceptar-modal {
     background-color: var(--accent-color);
     color: #fff;
-    padding: 0.75em 1.5em;
+    padding: 0.75em 2.5em;
     border: none;
     border-radius: 8px;
     text-decoration: none;
@@ -284,6 +287,7 @@ a:hover {
 
 .cta-button:hover, .btn-enviar:hover, .aceptar-modal:hover {
     background-color: #005fcc;
+    color: #fff;
 }
 
 .home-image {
@@ -314,7 +318,6 @@ a:hover {
 }
 
 .sobre-mi p {
-    font-size: 1.1rem;
     margin-bottom: 1.5rem;
     color: #bbb;
 }
@@ -410,7 +413,6 @@ a:hover {
 }
 
 .projects-intro {
-    font-size: 1.1rem;
     margin-bottom: 40px;
     max-width: 700px;
     margin-left: auto;
@@ -551,7 +553,6 @@ a:hover {
 }
 
 .contact-subtitle {
-    font-size: 1.1rem;
     margin-bottom: 30px;
     color: #ccc;
 }
@@ -605,7 +606,6 @@ a:hover {
     color: #bbb;
     padding: 40px 20px;
     font-size: 0.9rem;
-    /* animation: fadeInUp 1s ease-in; */
 }
 
 .footer-container {
@@ -627,6 +627,7 @@ a:hover {
 }
 
 .footer-links a {
+    font-size: 1.5rem;
     color: #ccc;
     text-decoration: none;
     transition: color 0.3s;
@@ -764,10 +765,6 @@ a:hover {
     /* ABOUT ME SECTION */
     .sobre-mi {
         padding: 2rem;
-    }
-
-    .sobre-mi p {
-        font-size: 1rem;
     }
 
     /* Proyectos */
