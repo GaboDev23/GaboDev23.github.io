@@ -1,3 +1,4 @@
+const navItems = document.querySelectorAll('.nav-bar a');
 const formulario = document.getElementById('contact-form');
 const nombre = document.getElementById('nombre');
 const errorNombre = document.getElementById('error-nombre');
@@ -5,8 +6,15 @@ const email = document.getElementById('email');
 const errorEmail = document.getElementById('error-email');
 const telefono = document.getElementById('telefono');
 const errorTelefono = document.getElementById('error-telefono');
-const modal = document.getElementById('modal');
-const aceptarModal = document.getElementById('aceptar-modal');
+const toggle = document.getElementById('menu-toggle');
+const label = document.querySelector('label[for="menu-toggle"]');
+const nav = document.querySelector('.nav-bar');
+
+const updateAria = () => {
+    const isChecked = toggle.checked;
+    label.setAttribute('aria-expanded', isChecked);
+    nav.setAttribute('aria-hidden', !isChecked);
+}
 
 const cambiarMensaje = (elemento, color, mensaje) => {
     elemento.style.display = 'block';
@@ -36,6 +44,22 @@ const validarTelefono = telefono => {
     }
     return true;
 }
+
+toggle.addEventListener('change', updateAria);
+
+label.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle.checked = !toggle.checked;
+        updateAria();
+    }
+});
+
+navItems.forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('menu-toggle').checked = false;
+    });
+});
 
 formulario.addEventListener('submit', e => {
     e.preventDefault();

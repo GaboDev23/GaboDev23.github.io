@@ -131,6 +131,9 @@ header {
     align-items: center;
     padding: 1rem 2rem;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-color);
+    animation: fadeIn 0.8s ease;
 }
 
 h1 a {
@@ -138,11 +141,19 @@ h1 a {
     color: var(--accent-color);
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    transition: letter-spacing .7s ease;
 }
+
+h1 a:hover {
+    letter-spacing: 5px;
+}
+
 
 .nav-bar {
     display: flex;
     gap: 2rem;
+    background: var(--bg-color);
 }
 
 a {
@@ -157,7 +168,12 @@ a:hover {
 }
 
 .menu-toggle {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .menu-icon {
@@ -677,14 +693,12 @@ p {
         overflow: hidden;
         padding-top: 10px;
         transition: max-height .5s ease;
+        visibility: hidden;
+        pointer-events: none;
     }
 
     .menu-toggle {
         display: none;
-    }
-    
-    .menu-toggle:checked ~ nav {
-        background: var(--bg-color);
     }
 
     .menu-icon {
@@ -740,6 +754,8 @@ p {
     .menu-toggle:checked ~ nav {
         display: flex;
         max-height: 50vh;
+        visibility: visible;
+        pointer-events: auto;
     }
 
     nav a {
