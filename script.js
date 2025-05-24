@@ -1,4 +1,9 @@
+const body = document.body;
 const navItems = document.querySelectorAll('.nav-bar a');
+const toggle = document.getElementById('menu-toggle');
+const label = document.querySelector('label[for="menu-toggle"]');
+const nav = document.querySelector('.nav-bar');
+const toggleTheme = document.getElementById('toggle-theme');
 const formulario = document.getElementById('contact-form');
 const nombre = document.getElementById('nombre');
 const errorNombre = document.getElementById('error-nombre');
@@ -6,9 +11,12 @@ const email = document.getElementById('email');
 const errorEmail = document.getElementById('error-email');
 const telefono = document.getElementById('telefono');
 const errorTelefono = document.getElementById('error-telefono');
-const toggle = document.getElementById('menu-toggle');
-const label = document.querySelector('label[for="menu-toggle"]');
-const nav = document.querySelector('.nav-bar');
+
+  // Cargar tema guardado
+if (localStorage.getItem('theme') === 'light') {
+    body.classList.add('light-theme');
+    toggleTheme.textContent = '🌙';
+}
 
 const updateAria = () => {
     const isChecked = toggle.checked;
@@ -59,6 +67,14 @@ navItems.forEach(link => {
     link.addEventListener('click', () => {
         document.getElementById('menu-toggle').checked = false;
     });
+});
+
+toggleTheme.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    const isLight = body.classList.contains('light-theme');
+
+    toggleTheme.textContent = isLight ? '🌙' : '☀️';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
 });
 
 formulario.addEventListener('submit', e => {

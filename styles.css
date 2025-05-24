@@ -1,6 +1,15 @@
 :root {
     --bg-color: #121212;
     --text-color: #f0f0f0;
+    --grey-text: #999;
+    --accent-color: #0077ff;
+}
+
+
+body.light-theme {
+    --bg-color: #eee;
+    --text-color: #121212;
+    --grey-text: #333;
     --accent-color: #0077ff;
 }
 
@@ -15,6 +24,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
     line-height: 1.6;
     padding-top: 70px;
     overflow-x: hidden;
@@ -25,11 +35,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #222;
+    background: var(--bg-color);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #555;
+    background-color: var(--grey-text);
     border-radius: 20px;
 }
 
@@ -53,7 +63,7 @@ p {
     width: 60px;
     height: 60px;
     background: var(--accent-color);
-    opacity: 0.05;
+    opacity: .8;
     border-radius: 50%;
     animation: float 20s linear infinite;
 }
@@ -158,7 +168,7 @@ h1 a:hover {
 
 a {
     text-decoration: none;
-    color: #bbb;
+    color: var(--grey-text);
     font-weight: 500;
     font-size: 1.5rem;
 }
@@ -189,6 +199,30 @@ a:hover {
     background-color: var(--text-color);
     display: block;
 }
+
+.theme-toggle {
+    background: none;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    outline: none;
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--accent-color);
+}
+
 
 @keyframes fadeIn {
     0% {
@@ -259,7 +293,7 @@ a:hover {
 /* Efecto máquina de escribir */
 .typing {
     font-size: 1.5rem;
-    color: #aaa;
+    color: var(--grey-text);
     margin-bottom: 1rem;
     white-space: nowrap;
     overflow: hidden;
@@ -335,7 +369,7 @@ p {
 
 .sobre-mi p {
     margin-bottom: 1.5rem;
-    color: #bbb;
+    color: var(--grey-text);
 }
 
 .habilidades {
@@ -443,7 +477,7 @@ p {
 }
 
 .project-card {
-    background-color: #1a1a1a;
+    background-color: var(--bg-color);
     border-left: 4px solid #0077ff;
     padding: 25px;
     border-radius: 12px;
@@ -474,13 +508,13 @@ p {
 
 .project-card h3 {
     margin-bottom: 10px;
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
     font-size: 2rem;
 }
 
 .project-card p {
-    color: #ccc;
+    color: var(--grey-text);
     line-height: 1.5;
 }
 
@@ -512,13 +546,14 @@ p {
 }
 
 .tarjeta-servicio {
-    background-color: #1a1a1a;
+    background-color: var(--bg-color);
     border-radius: 1rem;
     padding: 2rem;
     max-width: 300px;
     flex: 1 1 260px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
+    color: var(--grey-text);
 }
 
 .tarjeta-servicio:hover {
@@ -551,7 +586,7 @@ p {
 
 /* Contacto */
 .contact-section {
-    color: #f0f0f0;
+    color: var(--text-color);
     padding: 60px 20px;
     text-align: center;
     animation: fadeIn 1s ease-in;
@@ -570,7 +605,7 @@ p {
 
 .contact-subtitle {
     margin-bottom: 30px;
-    color: #ccc;
+    color: var(--grey-text);
 }
 
 .contact-form {
@@ -594,21 +629,23 @@ p {
     padding: 10px;
     border: none;
     border-radius: 8px;
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: transparent;
+    color: var(--grey-text);
     font-size: 1rem;
     resize: none;
+    border-bottom: 2px solid var(--accent-color);
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #aaa;
+    color: var(--text-color);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
+    transform: scale(1.05);
     outline: 2px solid #0077ff;
-    background-color: #2a2a2a;
+    transition: transform .5s ease;
 }
 
 .btn-enviar {
