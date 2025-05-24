@@ -12,72 +12,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<!-- CABECERA DE LA PÁGINA -->
+    <header>
+        <h1 title="Volver al inicio"><a href="index.html#inicio">GABODEV</a></h1> <!-- LOGO DEL SITIO: al hacer clic vuelve al inicio -->
 
-<header>
-    <h1><a href="index.html">GABODEV</a></h1>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <nav class="nav-bar">
-        <a href="index.html#sobre-mi">Sobre mí</a>
-        <a href="index.html#proyectos">Proyectos</a>
-        <a href="index.html#servicios">Servicios</a>
-        <a href="index.html#contacto">Contacto</a>
-    </nav>
-</header>
+        <!-- BOTÓN PARA DESPLEGAR EL MENÚ -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación"/> <!-- CHECKBOX INVISIBLE QUE CONTROLA EL ESTADO DEL MENÚ HAMBURGUESA (abierto/cerrado) -->
+        <!-- ÍCONO DE MENÚ HAMBURGUESA, USADO COMO BOTÓN PARA MOSTRAR/OCULTAR EL MENÚ -->
+        <!-- tabindex="0" permite navegar con TAB; role="button" mejora accesibilidad -->
+        <!-- aria-controls y aria-expanded indican control y estado del menú -->
+        <label for="menu-toggle" class="menu-icon" tabindex="0" role="button" aria-controls="menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-<main class="main-politicas">
-    <h2>1. Aceptación de los términos</h2>
-    <p>
-        Al acceder y utilizar este sitio web, aceptas cumplir con estos términos y condiciones. Si no estás de acuerdo, te pedimos que no utilices este sitio.
-    </p>
-
-    <h2>2. Uso permitido</h2>
-    <p>
-        Este portafolio está destinado a mostrar los trabajos y servicios de Gilberto Gabriel Herling Barriola. No está permitido utilizar el contenido de este sitio con fines comerciales o sin autorización previa.
-    </p>
-
-    <h2>3. Propiedad intelectual</h2>
-    <p>
-        Todo el contenido de este sitio, incluidos textos, diseño, imágenes y código, es propiedad del autor, salvo que se indique lo contrario. Queda prohibida su reproducción sin permiso expreso.
-    </p>
-
-    <h2>4. Limitación de responsabilidad</h2>
-    <p>
-        Este sitio no garantiza que esté libre de errores o interrupciones. No se asume responsabilidad por daños derivados del uso del mismo.
-    </p>
-
-    <h2>5. Enlaces externos</h2>
-    <p>
-        Este sitio puede contener enlaces a sitios de terceros (por ejemplo, GitHub o LinkedIn). No se controla ni se asume responsabilidad por el contenido de esos sitios.
-    </p>
-
-    <h2>6. Cambios en los términos</h2>
-    <p>
-        Estos términos pueden actualizarse en cualquier momento. Las modificaciones se publicarán en esta página y entrarán en vigencia desde ese momento.
-    </p>
-</main>
-
-<footer class="site-footer">
-    <div class="footer-container">
-        <p class="footer-author">© 2025 Gilberto Gabriel Herling Barriola</p>
-        <nav class="footer-links">
-            <a href="politica-privacidad.html">Política de privacidad</a>
-            <a href="terminos-condiciones.html">Términos y condiciones</a>
+        <!-- MENÚ DE NAVEGACIÓN PRINCIPAL -->
+        <!-- role="navigation" y aria-label para accesibilidad -->
+        <nav class="nav-bar" role="navigation" aria-label="Menú principal" aria-label="Alternar menú de navegación">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
         </nav>
-        <div class="footer-social">
-            <a href="https://github.com/tugithub" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/tulinkedin" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        </div>
-    </div>
-</footer>
 
+        <!-- BOTÓN DE CAMBIO DE TEMA (CLARO/OSCURO) CON ÍCONO -->
+        <!-- aria-label para describir su función a lectores de pantalla -->
+        <button id="toggle-theme" class="theme-toggle" aria-label="Cambiar tema">☀️</button>
+    </header>
+
+    <main class="main-politicas">
+        <h2>1. Aceptación de los términos</h2>
+        <p>
+            Al acceder y utilizar este sitio web, aceptas cumplir con estos términos y condiciones. Si no estás de acuerdo, te pedimos que no utilices este sitio.
+        </p>
+
+        <h2>2. Uso permitido</h2>
+        <p>
+            Este portafolio está destinado a mostrar los trabajos y servicios de Gilberto Gabriel Herling Barriola. No está permitido utilizar el contenido de este sitio con fines comerciales o sin autorización previa.
+        </p>
+
+        <h2>3. Propiedad intelectual</h2>
+        <p>
+            Todo el contenido de este sitio, incluidos textos, diseño, imágenes y código, es propiedad del autor, salvo que se indique lo contrario. Queda prohibida su reproducción sin permiso expreso.
+        </p>
+
+        <h2>4. Limitación de responsabilidad</h2>
+        <p>
+            Este sitio no garantiza que esté libre de errores o interrupciones. No se asume responsabilidad por daños derivados del uso del mismo.
+        </p>
+
+        <h2>5. Enlaces externos</h2>
+        <p>
+            Este sitio puede contener enlaces a sitios de terceros (por ejemplo, GitHub o LinkedIn). No se controla ni se asume responsabilidad por el contenido de esos sitios.
+        </p>
+
+        <h2>6. Cambios en los términos</h2>
+        <p>
+            Estos términos pueden actualizarse en cualquier momento. Las modificaciones se publicarán en esta página y entrarán en vigencia desde ese momento.
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-author">© 2025 Gilberto Gabriel Herling Barriola</p>
+            <nav class="footer-links">
+                <a href="politica-privacidad.html">Política de privacidad</a>
+                <a href="terminos-condiciones.html">Términos y condiciones</a>
+            </nav>
+            <div class="footer-social">
+                <a href="https://github.com/tugithub" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/tulinkedin" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

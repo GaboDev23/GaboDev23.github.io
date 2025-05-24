@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
-<body>
+<body id="inicio">
     <div class="background-animation">
         <span></span>
         <span></span>
@@ -24,18 +24,21 @@
 
     <!-- CABECERA DE LA PÁGINA -->
     <header>
-        <!-- LOGO -->
-        <h1 title="Volver al inicio"><a href="#">GABODEV</a></h1>
+        <h1 title="Volver al inicio"><a href="#inicio">GABODEV</a></h1> <!-- LOGO DEL SITIO: al hacer clic vuelve al inicio -->
 
         <!-- BOTÓN PARA DESPLEGAR EL MENÚ -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación"/>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación"/> <!-- CHECKBOX INVISIBLE QUE CONTROLA EL ESTADO DEL MENÚ HAMBURGUESA (abierto/cerrado) -->
+        <!-- ÍCONO DE MENÚ HAMBURGUESA, USADO COMO BOTÓN PARA MOSTRAR/OCULTAR EL MENÚ -->
+        <!-- tabindex="0" permite navegar con TAB; role="button" mejora accesibilidad -->
+        <!-- aria-controls y aria-expanded indican control y estado del menú -->
         <label for="menu-toggle" class="menu-icon" tabindex="0" role="button" aria-controls="menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </label>
 
-        <!-- MENÚ PRINCIPAL -->
+        <!-- MENÚ DE NAVEGACIÓN PRINCIPAL -->
+        <!-- role="navigation" y aria-label para accesibilidad -->
         <nav class="nav-bar" role="navigation" aria-label="Menú principal" aria-label="Alternar menú de navegación">
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#proyectos">Proyectos</a>
@@ -43,8 +46,9 @@
             <a href="#contacto">Contacto</a>
         </nav>
 
+        <!-- BOTÓN DE CAMBIO DE TEMA (CLARO/OSCURO) CON ÍCONO -->
+        <!-- aria-label para describir su función a lectores de pantalla -->
         <button id="toggle-theme" class="theme-toggle" aria-label="Cambiar tema">☀️</button>
-
     </header>
 
     <!-- SECCIÓN PRINCIPAL -->

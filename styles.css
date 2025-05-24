@@ -130,108 +130,138 @@ hr {
     border-color: #222;
 }
 
+/* ======================= */
+/* ESTILOS GENERALES DEL HEADER */
+/* ======================= */
+
 header {
-    position: fixed;
+    position: fixed;  /* Fija el header en la parte superior */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--bg-color);
-    animation: fadeIn 0.8s ease;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 15%; /* Altura fija */
+    display: flex; /* Flexbox para alinear contenido interno */
+    justify-content: space-between; /* Distribuye elementos con espacio entre ellos */
+    align-items: center; /* Centra verticalmente */
+    padding: 1rem 2rem; /* Espaciado interno */
+    z-index: 1000; /* Asegura que quede por encima de otros elementos */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil inferior */
+    background-color: var(--bg-color); /* Color de fondo dinámico (modo claro/oscuro) */
+    animation: fadeIn 0.8s ease; /* Animación al aparecer */
 }
+
+/* ======================= */
+/* LOGO */
+/* ======================= */
 
 h1 a {
     font-size: 3rem;
-    color: var(--accent-color);
+    color: var(--accent-color); /* Color llamativo para destacar el logo */
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1px;
-    transition: letter-spacing .7s ease;
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: letter-spacing .7s ease; /* Animación suave al pasar el mouse */
 }
 
 h1 a:hover {
-    letter-spacing: 5px;
+    letter-spacing: 5px; /* Aumenta espaciado al pasar el mouse para efecto visual */
 }
 
+/* ======================= */
+/* MENÚ DE NAVEGACIÓN */
+/* ======================= */
 
 .nav-bar {
-    display: flex;
+    display: flex; /* Espacio entre ítems */
     gap: 2rem;
-    background: var(--bg-color);
+    background: var(--bg-color); /* Mantiene coherencia con el tema */
 }
 
+/* Enlaces del menú */
 a {
     text-decoration: none;
-    color: var(--grey-text);
+    color: var(--grey-text); /* Color de texto (variable personalizada) */
     font-weight: 500;
     font-size: 1.5rem;
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: var(--accent-color); /* Color destacado al pasar el mouse */
 }
 
+/* ======================= */
+/* CHECKBOX DEL MENÚ (OCULTO) */
+/* ======================= */
+
 .menu-toggle {
-    position: absolute;
+    position: absolute; /* Oculta visualmente el checkbox */
     opacity: 0;
     width: 100px;
     height: 100px;
     overflow: hidden;
-    z-index: -1;
+    z-index: -1; /* Lo manda detrás del contenido */
 }
 
+/* ======================= */
+/* ÍCONO DE MENÚ HAMBURGUESA */
+/* ======================= */
+
 .menu-icon {
-    display: none;
+    display: none; /* Se muestra solo en mobile con media queries (asumido) */
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
 }
 
+/* Barras del ícono hamburguesa */
 .menu-icon span {
     height: 3px;
     width: 25px;
-    background-color: var(--text-color);
+    background-color: var(--text-color); /* Color dinámico según el tema */
     display: block;
 }
 
+/* ======================= */
+/* BOTÓN DE CAMBIO DE TEMA */
+/* ======================= */
+
 .theme-toggle {
-    background: none;
-    border: 2px solid var(--accent-color);
+    background: none; /* Fondo transparente */
+    border: 2px solid var(--accent-color); /* Borde llamativo */
     color: var(--accent-color);
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
-    border-radius: 50px;
+    border-radius: 50px; /* Botón redondeado */
     cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 999;
+    transition: all 0.3s ease; /* Transición suave */
+    z-index: 999; /* Aparece por encima de elementos normales */
 }
 
+/* Hover y focus (interacción) */
 .theme-toggle:hover,
 .theme-toggle:focus {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color); /* Invierte colores al interactuar */
     color: var(--bg-color);
     outline: none;
 }
 
+/* Enfocado con teclado: accesibilidad */
 .theme-toggle:focus-visible {
-    outline: 2px solid var(--accent-color);
+    outline: 2px solid var(--accent-color); /* Borde visible solo al navegar con teclado */
 }
 
+/* ======================= */
+/* ANIMACIÓN DE ENTRADA */
+/* ======================= */
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px); /* Parte desde abajo */
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0); /* Termina en posición original */
     }
 }
 
@@ -715,31 +745,44 @@ p {
 
 /* MEDIA QUERIES - Pantallas medianas */
 @media (max-width: 768px) {
+
+    /* =============================== */
+    /* NAV-BAR EN MODO RESPONSIVE     */
+    /* =============================== */
+
     .nav-bar {
-        position: fixed;
-        top: 15%;
+        position: fixed; /* Menú flotante */
+        top: 15%; /* Justo debajo del header */
         left: 0;
-        width: 100vw;
-        flex-direction: column;
+        width: 100vw; /* Ocupa todo el ancho */
+        flex-direction: column; /* Ítems en columna */
         align-items: center;
         display: flex;
         gap: 1.5rem;
         padding: 0;
         z-index: 999;
-        max-height: 0;
-        overflow: hidden;
+        max-height: 0; /* Oculto por defecto */
+        overflow: hidden; /* Oculta ítems que sobresalgan */
         padding-top: 10px;
         transition: max-height .5s ease;
-        visibility: hidden;
-        pointer-events: none;
+        visibility: hidden; /* Oculta de la vista */
+        pointer-events: none; /* Evita interacción cuando está oculto */
     }
 
+    /* =============================== */
+    /* OCULTA EL CHECKBOX VISUALMENTE */
+    /* =============================== */
+    
     .menu-toggle {
         display: none;
     }
 
+    /* =============================== */
+    /* BOTÓN HAMBURGUESA (VISIBLE EN MÓVIL) */
+    /* =============================== */
+
     .menu-icon {
-        display: flex;
+        display: flex; /* Se muestra en pantallas pequeñas */
         flex-direction: column;
         justify-content: center;
         gap: 5px;
@@ -750,6 +793,10 @@ p {
         position: relative;
     }
     
+    /* =============================== */
+    /* ESTILOS DE LAS BARRAS HAMBURGUESA */
+    /* =============================== */
+
     .menu-icon span {
         position: absolute;
         left: 0;
@@ -759,7 +806,7 @@ p {
         transition: 0.4s ease;
     }
     
-      /* Posiciones normales de las barras */
+    /* Posición de las barras antes de animar */
     .menu-icon span:nth-child(1) {
         top: 0;
     }
@@ -773,33 +820,47 @@ p {
         bottom: 0;
     }
     
-      /* Animación al hacer check */
+    /* =============================== */
+    /* ANIMACIÓN AL ABRIR EL MENÚ */
+    /* =============================== */
+
+    /* Primera barra: gira para formar la X */
     .menu-toggle:checked + .menu-icon span:nth-child(1) {
         top: 50%;
         transform: translateY(-50%) rotate(45deg);
     }
     
+    /* Segunda barra: desaparece */
     .menu-toggle:checked + .menu-icon span:nth-child(2) {
         opacity: 0;
     }
     
+    /* Tercera barra: gira para formar la X */
     .menu-toggle:checked + .menu-icon span:nth-child(3) {
         bottom: 50%;
         transform: translateY(50%) rotate(-45deg);
     }
 
+    /* =============================== */
+    /* MOSTRAR EL MENÚ AL ACTIVAR EL CHECKBOX */
+    /* =============================== */
     .menu-toggle:checked ~ nav {
         display: flex;
-        max-height: 50vh;
+        max-height: 50vh; /* Muestra con altura máxima limitada */
         visibility: visible;
-        pointer-events: auto;
+        pointer-events: auto; /* Habilita clics y foco */
     }
+
+    /* =============================== */
+    /* ENLACES DEL MENÚ EN MÓVIL */
+    /* =============================== */
 
     nav a {
         padding: 6px;
         font-size: 1.5em;
     }
 
+    /* Tamaño más pequeño para el logo en móviles */
     h1 a {
         font-size: 2rem;
     }
