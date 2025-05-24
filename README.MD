@@ -13,7 +13,6 @@ Archivo principal del sitio. Contiene:
 - Un formulario de contacto funcional, integrado con [Formspree](https://formspree.io/).
 - Un footer con enlaces a redes sociales y la política de privacidad.
 
-#### Cabecera de `ìndex.html`
 # Encabezado del sitio web - GABODEV
 
 Este encabezado pertenece al sitio personal **GABODEV**, diseñado con enfoque en **usabilidad**, **accesibilidad**, **estética moderna** y **responsive design**. Contiene un logotipo, un menú de navegación adaptativo, un botón para cambiar el tema (modo claro/oscuro) y está optimizado para dispositivos móviles.
